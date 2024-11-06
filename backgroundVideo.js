@@ -18,4 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
     videoContainer.appendChild(video);
     document.body.appendChild(videoContainer);
   });
+ 
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+scrollToTopBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scroll
+    });
+});
   
